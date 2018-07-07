@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="data"
+            type="com.boundaryproj.bottletaste.MainFolder.HomeFolder.API.ChatRoomData"/>
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/layer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.github.siyamed.shapeimageview.CircularImageView
+                        android:id="@+id/profileImageView"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        app:siBorderWidth="2dp"
+                        app:srcCompat="@color/boundary_blue" />
+
+                    <TextView
+                        android:id="@+id/nicknameLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:textColor="@color/txtbold_color"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/divide_color">
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/lastchatLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="35dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/chat_gray_round"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/divide_color">
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/bounderBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="15dp"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/chat_room_bounder_icon" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

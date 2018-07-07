@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="data"
+            type="com.boundaryproj.bottletaste.MainFolder.MapBounderFolder.API.MapBindingData"/>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="1.5dp"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:id="@+id/profileImageView"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    app:layout_aspectRatio="100%"
+                    app:layout_widthPercent="100%"
+                    app:siBorderWidth="2dp"
+                    app:siBorderColor="#989898"
+                    app:srcCompat="@color/boundary_blue" />
+
+
+
+            </android.support.percent.PercentRelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="75dp"
+                android:layout_height="25dp">
+
+                <TextView
+                    android:id="@+id/nicknameLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/txtbold_color"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>

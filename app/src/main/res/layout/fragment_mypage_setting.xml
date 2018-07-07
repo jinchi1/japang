@@ -1,0 +1,534 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:id="@+id/mainLayer"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        tools:context="com.boundaryproj.bottletaste.MainFolder.MypageFolder.Fragment.MypageSettingFragment">
+
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="7.5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <android.support.percent.PercentRelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:id="@+id/choiceBtn1"
+                                android:background="@drawable/blank_add_photo"
+                                android:orientation="vertical"
+                                app:layout_aspectRatio="150%"
+                                app:layout_widthPercent="100%">
+
+                                <com.github.siyamed.shapeimageview.RoundedImageView
+                                    android:id="@+id/profileImage1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="fitXY"
+                                    android:visibility="visible"
+                                    app:siBorderColor="#00000000"
+                                    app:siBorderWidth="0dp"
+                                    app:siRadius="15dp" />
+
+                                <ImageView
+                                    android:id="@+id/modify1"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginBottom="-3dp"
+                                    android:layout_marginRight="-3dp"
+                                    android:visibility="gone"
+                                    app:srcCompat="@drawable/only_modify_btn" />
+                            </RelativeLayout>
+                        </android.support.percent.PercentRelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:orientation="vertical">
+
+                            <android.support.percent.PercentRelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="7.5dp"
+                                android:layout_marginLeft="7.5dp"
+                                android:layout_weight="1">
+
+                                <RelativeLayout
+                                    android:id="@+id/choiceBtn2"
+                                    android:background="@drawable/blank_add_photo"
+                                    android:orientation="vertical"
+                                    app:layout_aspectRatio="300%"
+                                    app:layout_widthPercent="100%">
+
+                                    <com.github.siyamed.shapeimageview.RoundedImageView
+                                        android:id="@+id/profileImage2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:adjustViewBounds="true"
+                                        android:scaleType="fitXY"
+                                        android:visibility="gone"
+                                        app:siBorderColor="#00000000"
+                                        app:siBorderWidth="0dp"
+                                        app:siRadius="15dp" />
+
+                                    <ImageView
+                                        android:id="@+id/modify2"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginBottom="-3dp"
+                                        android:layout_marginRight="-3dp"
+                                        android:visibility="gone"
+                                        app:srcCompat="@drawable/only_modify_btn" />
+                                </RelativeLayout>
+                            </android.support.percent.PercentRelativeLayout>
+
+                            <android.support.percent.PercentRelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="7.5dp"
+                                android:layout_marginTop="7.5dp"
+                                android:layout_weight="1">
+
+                                <RelativeLayout
+                                    android:id="@+id/choiceBtn3"
+                                    android:background="@drawable/blank_add_photo"
+                                    android:orientation="vertical"
+                                    app:layout_aspectRatio="300%"
+                                    app:layout_widthPercent="100%">
+
+                                    <com.github.siyamed.shapeimageview.RoundedImageView
+                                        android:id="@+id/profileImage3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:adjustViewBounds="true"
+                                        android:scaleType="fitXY"
+                                        android:visibility="gone"
+                                        app:siBorderColor="#00000000"
+                                        app:siBorderWidth="0dp"
+                                        app:siRadius="15dp" />
+
+                                    <ImageView
+                                        android:id="@+id/modify3"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginBottom="-3dp"
+                                        android:layout_marginRight="-3dp"
+                                        android:visibility="gone"
+                                        app:srcCompat="@drawable/only_modify_btn" />
+                                </RelativeLayout>
+                            </android.support.percent.PercentRelativeLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7.5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <android.support.percent.PercentRelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:id="@+id/choiceBtn4"
+                                android:background="@drawable/blank_add_photo"
+                                android:orientation="vertical"
+                                app:layout_aspectRatio="300%"
+                                app:layout_widthPercent="100%">
+
+                                <com.github.siyamed.shapeimageview.RoundedImageView
+                                    android:id="@+id/profileImage4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="gone"
+                                    app:siBorderColor="#00000000"
+                                    app:siBorderWidth="0dp"
+                                    app:siRadius="15dp" />
+
+                                <ImageView
+                                    android:id="@+id/modify4"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginBottom="-3dp"
+                                    android:layout_marginRight="-3dp"
+                                    android:visibility="gone"
+                                    app:srcCompat="@drawable/only_modify_btn" />
+                            </RelativeLayout>
+                        </android.support.percent.PercentRelativeLayout>
+
+                        <android.support.percent.PercentRelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:id="@+id/choiceBtn5"
+                                android:background="@drawable/blank_add_photo"
+                                android:orientation="vertical"
+                                app:layout_aspectRatio="300%"
+                                app:layout_widthPercent="100%">
+
+                                <com.github.siyamed.shapeimageview.RoundedImageView
+                                    android:id="@+id/profileImage5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="fitXY"
+                                    android:visibility="gone"
+                                    app:siBorderColor="#00000000"
+                                    app:siBorderWidth="0dp"
+                                    app:siRadius="15dp" />
+
+                                <ImageView
+                                    android:id="@+id/modify5"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginBottom="-3dp"
+                                    android:layout_marginRight="-3dp"
+                                    android:visibility="gone"
+                                    app:srcCompat="@drawable/only_modify_btn" />
+                            </RelativeLayout>
+                        </android.support.percent.PercentRelativeLayout>
+
+                        <android.support.percent.PercentRelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:id="@+id/choiceBtn6"
+                                android:background="@drawable/blank_add_photo"
+                                android:orientation="vertical"
+                                app:layout_aspectRatio="300%"
+                                app:layout_widthPercent="100%">
+
+                                <com.github.siyamed.shapeimageview.RoundedImageView
+                                    android:id="@+id/profileImage6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="fitXY"
+                                    android:visibility="gone"
+                                    app:siBorderColor="#00000000"
+                                    app:siBorderWidth="0dp"
+                                    app:siRadius="15dp" />
+
+                                <ImageView
+                                    android:id="@+id/modify6"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginBottom="-3dp"
+                                    android:layout_marginRight="-3dp"
+                                    android:visibility="gone"
+                                    app:srcCompat="@drawable/only_modify_btn" />
+                            </RelativeLayout>
+                        </android.support.percent.PercentRelativeLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearLayout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/bottom_line">
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/relativeLayout8"
+                            android:visibility="visible">
+
+                            <EditText
+                                android:id="@+id/nickEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_below="@+id/textView21"
+                                android:layout_marginLeft="-10dp"
+                                android:layout_marginRight="-10dp"
+                                android:background="@drawable/info_background"
+                                android:ems="10"
+                                android:inputType="textPersonName"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="25dp"
+                                android:paddingRight="25dp"
+                                android:textColor="@color/txt_color"
+                                android:textColorHint="#999999"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/textView21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:paddingBottom="10dp"
+                                android:paddingLeft="15dp"
+                                android:paddingTop="15dp"
+                                android:text="이름 "
+                                android:textColor="@color/txtbold_color"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relativeLayout8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/relativeLayout7">
+
+                            <EditText
+                                android:id="@+id/ageEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_below="@+id/textView20"
+                                android:layout_marginLeft="-10dp"
+                                android:layout_marginRight="-10dp"
+                                android:background="@drawable/info_background"
+                                android:ems="10"
+                                android:inputType="textPersonName"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="25dp"
+                                android:paddingRight="25dp"
+                                android:focusable="false"
+                                android:textColor="@color/txt_color"
+                                android:textColorHint="#999999"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/textView20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:paddingBottom="10dp"
+                                android:paddingLeft="15dp"
+                                android:paddingTop="15dp"
+                                android:text="나이 "
+                                android:textColor="@color/txtbold_color"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relativeLayout7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/relativeLayout6">
+
+                            <EditText
+                                android:id="@+id/jobEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_below="@+id/textView19"
+                                android:layout_marginLeft="-10dp"
+                                android:layout_marginRight="-10dp"
+                                android:background="@drawable/info_background"
+                                android:ems="10"
+                                android:inputType="textPersonName"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="25dp"
+                                android:paddingRight="25dp"
+                                android:textColor="@color/txt_color"
+                                android:textColorHint="#999999"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/textView19"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:paddingBottom="10dp"
+                                android:paddingLeft="15dp"
+                                android:paddingTop="15dp"
+                                android:text="직업 "
+                                android:textColor="@color/txtbold_color"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relativeLayout6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/relativeLayout5">
+
+                            <EditText
+                                android:id="@+id/schoolEditTExt"
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_below="@+id/textView18"
+                                android:layout_marginLeft="-10dp"
+                                android:layout_marginRight="-10dp"
+                                android:background="@drawable/info_background"
+                                android:ems="10"
+                                android:inputType="textPersonName"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="25dp"
+                                android:paddingRight="25dp"
+                                android:textColor="@color/txt_color"
+                                android:textColorHint="#999999"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/textView18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:paddingBottom="10dp"
+                                android:paddingLeft="15dp"
+                                android:paddingTop="15dp"
+                                android:text="학교 "
+                                android:textColor="@color/txtbold_color"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relativeLayout5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/infoEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_below="@+id/textView15"
+                                android:background="#F0F0F0"
+                                android:ems="10"
+                                android:inputType="textMultiLine"
+                                android:maxLength="500"
+                                android:paddingBottom="15dp"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:paddingTop="15dp"
+                                android:textColor="@color/txt_color"
+                                android:textColorHint="#999999"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/textView15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:paddingBottom="10dp"
+                                android:paddingLeft="15dp"
+                                android:paddingTop="15dp"
+                                android:text="소개 "
+                                android:textColor="@color/txtbold_color"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <android.support.percent.PercentRelativeLayout
+                            android:id="@+id/hiddenLayer"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_margin="15dp"
+                                android:orientation="vertical"
+                                app:layout_aspectRatio="188%"
+                                app:layout_widthPercent="100%">
+
+                            </LinearLayout>
+
+                        </android.support.percent.PercentRelativeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</layout>

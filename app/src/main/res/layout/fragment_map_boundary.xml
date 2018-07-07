@@ -1,0 +1,440 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="model"
+            type="com.boundaryproj.bottletaste.MainFolder.HomeFolder.Model.MapBIndingViewModel"/>
+    </data>
+    <RelativeLayout
+        android:id="@+id/totalView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout10"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                app:srcCompat="@drawable/background_bar_today_bounders" />
+
+            <com.github.siyamed.shapeimageview.CircularImageView
+                android:id="@+id/myprofileView"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/imageView16"
+                android:layout_marginLeft="15dp"
+                app:siBorderColor="#d9d9d9"
+                app:siBorderWidth="1.5dp" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:scaleType="center"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                app:srcCompat="@drawable/today_bounder_title_image" />
+
+            <ImageView
+                android:id="@+id/settingBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:padding="15dp"
+                app:srcCompat="@drawable/icon_search_setting" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mainlayer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relativeLayout10">
+
+            <RelativeLayout
+                android:id="@+id/userLayer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/relativeLayout35">
+
+                    <RelativeLayout
+                        android:id="@+id/content_Layers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayout33"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/relativeLayout37"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true">
+
+                            <android.support.percent.PercentRelativeLayout
+                                android:id="@+id/percentRelativeLayout2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginBottom="15dp"
+                                android:gravity="center">
+
+                                <RelativeLayout
+                                    android:orientation="vertical"
+                                    app:layout_aspectRatio="110%"
+                                    app:layout_widthPercent="95%">
+
+                                    <com.github.siyamed.shapeimageview.RoundedImageView
+                                        android:id="@+id/userProfileImage"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:adjustViewBounds="true"
+                                        android:scaleType="centerCrop"
+                                        app:siRadius="15dp"
+                                        app:srcCompat="@color/boundary_blue" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="80dp"
+                                        android:layout_alignParentBottom="true"
+                                        android:background="@drawable/boundary_shadow_back">
+
+                                        <ImageView
+                                            android:id="@+id/boundingBtn"
+                                            android:layout_width="100dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_alignParentRight="true"
+
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginRight="15dp"
+                                            android:scaleX="1"
+                                            android:scaleY="1"
+                                            app:srcCompat="@drawable/add_friend_btn_binding" />
+
+                                        <TextView
+                                            android:id="@+id/userInfo_Label"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginLeft="15dp"
+                                            android:layout_toLeftOf="@+id/boundingBtn"
+                                            android:layout_toRightOf="@+id/myboundingsBtn"
+                                            android:textColor="@color/white"
+                                            android:textSize="15sp" />
+
+                                        <RelativeLayout
+                                            android:id="@+id/myboundingsBtn"
+                                            android:layout_width="60dp"
+                                            android:layout_height="60dp"
+                                            android:layout_alignParentBottom="true"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_alignParentStart="true"
+                                            android:layout_marginBottom="15dp"
+                                            android:layout_marginLeft="15dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/boundary_people_cnt">
+
+                                            <TextView
+                                                android:id="@+id/counterLabels"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentBottom="true"
+                                                android:layout_alignParentEnd="true"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_margin="18dp"
+                                                android:textColor="#ffffff"
+                                                android:textSize="12sp" />
+                                        </RelativeLayout>
+                                    </RelativeLayout>
+                                </RelativeLayout>
+                            </android.support.percent.PercentRelativeLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relativeLayout36"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/recyclerview"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:foregroundGravity="center"
+                                app:mapboundingadapter="@{model.mapBindingDatas}">
+
+                            </android.support.v7.widget.RecyclerView>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/relativeLayout33">
+
+                        <TextView
+                            android:id="@+id/todaycountLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/textView23"
+                            android:layout_toRightOf="@+id/textView23"
+                            android:textColor="@color/boundary_blue"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/textView23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:text="오후 10시까지 지나친 사람들"
+                            android:textColor="@color/txtbold_color"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/settingLayer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#d0000000"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView20"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:scaleType="center"
+                            android:scaleX="0.5"
+                            android:scaleY="0.5"
+                            app:srcCompat="@drawable/bounder_search_setting_text" />
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="지나친 횟수"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <io.apptik.widget.MultiSlider
+                            android:id="@+id/range_slider"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
+                            app:drawThumbsApart="true"
+                            app:range1="@drawable/multislider_track_mtrl_alpha"
+                            app:range1Color="#50ffffff"
+                            app:rangeColor="@color/boundary_red"
+                            app:scaleMax="100"
+                            app:scaleMin="1"
+                            app:stepsThumbsApart="5"
+                            app:thumbColor="#ffffff"
+                            app:thumbNumber="2"
+                            app:trackColor="#50ffffff" />
+
+                        <TextView
+                            android:id="@+id/counterLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="-"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#ffffff">
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1.2"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView27"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:text="성별"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/bothBtn"
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/red_rounded_btn"
+                                android:gravity="center"
+                                android:text="남/여"
+                                android:textColor="#ffffff"
+                                android:textSize="13sp" />
+
+                            <Button
+                                android:id="@+id/femaleBtn"
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/radio_btns"
+                                android:gravity="center"
+                                android:text="여자"
+                                android:textColor="#666666"
+                                android:textSize="13sp" />
+
+                            <Button
+                                android:id="@+id/maleBtn"
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/radio_btns"
+                                android:gravity="center"
+                                android:text="남자"
+                                android:textColor="#666666"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#ffffff">
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView28"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="연령"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <io.apptik.widget.MultiSlider
+                            android:id="@+id/age_multiSlider"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
+                            app:drawThumbsApart="true"
+                            app:range1="@drawable/multislider_track_mtrl_alpha"
+                            app:range1Color="#50ffffff"
+                            app:rangeColor="@color/boundary_red"
+                            app:scaleMax="100"
+                            app:scaleMin="19"
+                            app:stepsThumbsApart="5"
+                            app:thumbColor="#ffffff"
+
+                            app:thumbNumber="2"
+                            app:trackColor="#50ffffff" />
+
+                        <TextView
+                            android:id="@+id/age_countLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="-"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <ImageView
+                            android:id="@+id/filter_confirmBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:scaleX="0.8"
+                            android:scaleY="0.8"
+                            app:srcCompat="@drawable/confirm" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

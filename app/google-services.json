@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "15000120282",
+    "firebase_url": "https://boundary-9a73e.firebaseio.com",
+    "project_id": "boundary-9a73e",
+    "storage_bucket": "boundary-9a73e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15000120282:android:bb8b4e151ab45602",
+        "android_client_info": {
+          "package_name": "com.boundaryproj.bottletaste"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15000120282-ehahmef3cnga4r2d63nltvr9p32i2t29.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeETmSc_BBgujuFj6dSdy1N4YnvUbpUXU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

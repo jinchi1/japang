@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8DBAE2</color>
+    <color name="colorPrimaryDark">#8DBAE2</color>
+    <color name="colorAccent">#8DBAE2</color>
+    <color name="boundary_red">#E572AE</color>
+    <color name="boundary_sky">#8DBAE2</color>
+    <color name="boundary_blue">#69a3d8</color>
+    <color name="boundary_text_blue">#69A3D8</color>
+    <color name="txtbold_color">#3e3e4e</color>
+    <color name="txt_color">#7b7b7b</color>
+    <color name="txt_hing">#95989A</color>
+    <color name="background_info">#f0f0f0</color>
+    <color name="divide_color">#535353</color>
+
+</resources>

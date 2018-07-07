@@ -1,0 +1,255 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        tools:context="com.boundaryproj.bottletaste.MainFolder.HomeFolder.Fragment.MypageFragment">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <com.youth.banner.Banner
+                    android:id="@+id/multiImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:image_scale_type="center_crop"
+                    app:indicator_drawable_selected="@drawable/blue_circle"
+                    app:indicator_drawable_unselected="@drawable/white_circle">
+
+                </com.youth.banner.Banner>
+
+                <ImageView
+                    android:id="@+id/modifyBtn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignTop="@+id/settingBtn"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/settingBtn"
+                    android:layout_toStartOf="@+id/settingBtn"
+                    android:padding="5dp"
+                    app:srcCompat="@drawable/modify_btn" />
+
+                <ImageView
+                    android:id="@+id/settingBtn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    app:srcCompat="@drawable/setting_btn" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingBottom="8dp"
+                        android:layout_toLeftOf="@+id/myBoundingBtn"
+                        android:layout_toStartOf="@+id/myBoundingBtn">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.8">
+
+                            <TextView
+                                android:id="@+id/nickLabel"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="65dp"
+                                android:layout_toLeftOf="@+id/friend_state_btn"
+                                android:layout_toStartOf="@+id/friend_state_btn"
+                                android:maxLength="10"
+                                android:textColor="#666666"
+                                android:textSize="18sp" />
+
+                            <ImageView
+                                android:id="@+id/chatImageBtn"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@+id/friend_state_btn"
+                                android:layout_toRightOf="@+id/nicknameLabel"
+                                android:layout_toStartOf="@+id/friend_state_btn"
+                                android:padding="8dp"
+                                android:visibility="gone"
+                                app:srcCompat="@drawable/chat_bubble_icon" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/jobLayer"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:visibility="visible">
+
+                            <ImageView
+                                android:id="@+id/imageView15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="20dp"
+                                app:srcCompat="@drawable/icon_job" />
+
+                            <TextView
+                                android:id="@+id/jobLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="20dp"
+                                android:layout_toEndOf="@+id/imageView15"
+                                android:layout_toRightOf="@+id/imageView15"
+                                android:textColor="#666666"
+                                android:textSize="11sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/schoolLayer"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:visibility="visible">
+
+                            <ImageView
+                                android:id="@+id/imageView18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="20dp"
+                                app:srcCompat="@drawable/icon_school" />
+
+                            <TextView
+                                android:id="@+id/schoolLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="20dp"
+                                android:layout_toEndOf="@+id/imageView18"
+                                android:layout_toRightOf="@+id/imageView18"
+                                android:textColor="#666666"
+                                android:textSize="11sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/bottom_line">
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/myBoundingBtn"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/imageView21"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    app:srcCompat="@drawable/how_many_bounding_today" />
+
+                                <TextView
+                                    android:id="@+id/bndCntLabel"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="1"
+                                    android:textColor="@color/white"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5">
+
+                                <TextView
+                                    android:id="@+id/textView39"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="10dp"
+                                    android:gravity="center"
+                                    android:text="Today Bounding"
+                                    android:textColor="@color/txt_color"
+                                    android:textSize="10sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/infoLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/relativeLayout4"
+                    android:padding="15dp"
+                    android:textColor="#666666"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</layout>

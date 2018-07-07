@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="data"
+            type="com.boundaryproj.bottletaste.MainFolder.ChatFolder.API.ChatData"/>
+    </data>
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/my_layer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/myTxtLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/chat_my_round"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="30dp"
+            android:paddingTop="8dp"
+            android:text="TextView"
+            android:textColor="@color/txtbold_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/myTimeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+            android:text="TextView"
+            android:textColor="@color/txt_hing"
+            android:textSize="9sp" />
+    </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_layer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout28"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:id="@+id/userProfileImageView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    app:siBorderWidth="2dp"
+                    app:srcCompat="@color/boundary_blue" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/relativeLayout28"
+                android:layout_toRightOf="@+id/relativeLayout28"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/userTxtLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/chat_gray_round"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="30dp"
+                    android:paddingTop="8dp"
+                    android:text="잉"
+                    android:textColor="@color/txtbold_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/userTimeLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="18dp"
+                    android:text="TextView"
+                    android:textColor="@color/txt_hing"
+                    android:textSize="9sp" />
+            </LinearLayout>
+        </RelativeLayout>
+</RelativeLayout>
+</layout>

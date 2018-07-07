@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.boundaryproj.bottletaste.MainFolder.SettingFolder.Act.SettingMainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/relativeLayout12">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="18dp"
+            app:srcCompat="@drawable/back_btn" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bottom_line">
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="설정"
+            android:textColor="@color/txtbold_color"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout12">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout14"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/relativeLayout131"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="80dp"
+                    android:paddingTop="15dp"
+                    android:text="선택한 성별에게만 자신의 계정이 노출 됩니다."
+                    android:textColor="@color/txtbold_color"
+                    android:textSize="9sp" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout131"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView10"
+                    android:background="@color/background_info">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/bothBtn"
+                                android:layout_width="70dp"
+                                android:layout_height="35dp"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/red_rounded_btn"
+                                android:gravity="center"
+                                android:text="남/여"
+                                android:textColor="#ffffff"
+                                android:textSize="13sp" />
+
+                            <Button
+                                android:id="@+id/femaleBtn"
+                                android:layout_width="70dp"
+                                android:layout_height="35dp"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/radio_btns"
+                                android:gravity="center"
+                                android:text="여자"
+                                android:textColor="#666666"
+                                android:textSize="13sp" />
+
+                            <Button
+                                android:id="@+id/maleBtn"
+                                android:layout_width="70dp"
+                                android:layout_height="35dp"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/radio_btns"
+                                android:gravity="center"
+                                android:text="남자"
+                                android:textColor="#666666"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:text="보여지기 설정"
+                    android:textColor="@color/txtbold_color"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_below="@+id/relativeLayout22"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="50dp"
+                android:background="@color/background_info"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/removeBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="계정 삭제하기"
+                    android:textColor="@color/txtbold_color"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout22"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_below="@+id/relativeLayout21"
+                android:background="@color/background_info"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/logoutBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="로그아웃"
+                    android:textColor="@color/txtbold_color"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout20"
+                android:paddingBottom="50dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:text="법적 고지"
+                    android:textColor="@color/txtbold_color"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_below="@+id/textView38"
+                    android:background="@color/background_info">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_alignParentBottom="true">
+
+                        <TextView
+                            android:id="@+id/webBtn1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="이용약관"
+                            android:textColor="@color/txtbold_color"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/imageView25"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:padding="20dp"
+                            app:srcCompat="@drawable/next_btn" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@drawable/bottom_line">
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp">
+
+                        <TextView
+                            android:id="@+id/webBtn2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="개인정보 취급방침"
+                            android:textColor="@color/txtbold_color"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/imageView26"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:padding="20dp"
+                            app:srcCompat="@drawable/next_btn" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout18"
+                android:paddingBottom="40dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/relativeLayout19"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="80dp"
+                    android:paddingTop="15dp"
+                    android:text="Boundary계정을 멈추게 됩니다. 더이상 지나친 사람들의 정보를 알 수 없고, 다른 회원들이 회원님의 Boundary정보를 볼 수 없습니다."
+                    android:textColor="@color/txtbold_color"
+                    android:textSize="9sp" />
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:text="Boundary에 등장하기"
+                    android:textColor="@color/txtbold_color"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout19"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_below="@+id/textView36"
+                    android:background="@color/background_info">
+
+                    <Button
+                        android:id="@+id/appearBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/appearSwitch"
+                        android:layout_alignEnd="@+id/appearSwitch"
+                        android:layout_alignLeft="@+id/appearSwitch"
+                        android:layout_alignRight="@+id/appearSwitch"
+                        android:layout_alignStart="@+id/appearSwitch"
+                        android:layout_alignTop="@+id/appearSwitch"
+                        android:background="#00000000" />
+
+                    <com.suke.widget.SwitchButton
+                        android:id="@+id/appearSwitch"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        app:sb_background="@color/txt_color"
+                        app:sb_button_color="@color/white"
+                        app:sb_checked_color="@color/boundary_red"
+                        app:sb_checkline_color="#00000000"
+
+                        app:sb_uncheck_color="@color/txt_color"
+                        app:sb_uncheckcircle_color="#00000000" />
+
+                    <ImageView
+                        android:id="@+id/imageView24"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dp"
+                        app:srcCompat="@mipmap/ic_launcher" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout13"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/textView24"
+                    android:background="@color/background_info">
+
+                    <ImageView
+                        android:id="@+id/imageView23"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dp"
+                        app:srcCompat="@drawable/instagram_activated" />
+
+                    <com.suke.widget.SwitchButton
+                        android:id="@+id/instaSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        app:sb_background="@color/txt_color"
+                        app:sb_button_color="@color/white"
+                        app:sb_checked_color="@color/boundary_red"
+                        app:sb_checkline_color="#00000000"
+                        app:sb_uncheck_color="@color/txt_color"
+                        app:sb_uncheckcircle_color="#00000000" />
+
+                    <Button
+                        android:id="@+id/instaBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/instaSwitch"
+                        android:layout_alignEnd="@+id/instaSwitch"
+                        android:layout_alignLeft="@+id/instaSwitch"
+                        android:layout_alignRight="@+id/instaSwitch"
+                        android:layout_alignStart="@+id/instaSwitch"
+                        android:layout_alignTop="@+id/instaSwitch"
+                        android:background="#00000000" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:text="Instagram 계정 연동"
+                    android:textColor="@color/txtbold_color"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/relativeLayout13"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="80dp"
+                    android:paddingTop="15dp"
+                    android:text="인스타그램 계정 연동을 활성화 하면 Bounder가 회원님의 인스타그램을  볼 수 있습니다. 내 계정을 연동해야 상대방의 인스타그램 링크를 볼 수 있습니다."
+                    android:textColor="@color/txtbold_color"
+                    android:textSize="9sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout_sex"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:text="알림설정"
+                    android:textColor="@color/txtbold_color"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView26"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/background_info"
+                    android:paddingBottom="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayout17"
+                        android:layout_marginLeft="15dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="55dp">
+
+                                <Button
+                                    android:id="@+id/passBtn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignBottom="@+id/passSwtich"
+                                    android:layout_alignEnd="@+id/passSwtich"
+                                    android:layout_alignLeft="@+id/passSwtich"
+                                    android:layout_alignRight="@+id/passSwtich"
+                                    android:layout_alignStart="@+id/passSwtich"
+                                    android:layout_alignTop="@+id/passSwtich"
+                                    android:background="#00000000" />
+
+                                <com.suke.widget.SwitchButton
+                                    android:id="@+id/passSwtich"
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="15dp"
+                                    app:sb_background="@color/txt_color"
+                                    app:sb_button_color="@color/white"
+                                    app:sb_checked_color="@color/boundary_red"
+                                    app:sb_checkline_color="#00000000"
+
+                                    app:sb_uncheck_color="@color/txt_color"
+                                    app:sb_uncheckcircle_color="#00000000" />
+
+                                <TextView
+                                    android:id="@+id/textView34"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerVertical="true"
+                                    android:text="지나친 횟수"
+                                    android:textColor="@color/txtbold_color"
+                                    android:textSize="14sp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp">
+
+                                <TextView
+                                    android:id="@+id/textView35"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="새로 지나친 사람이 나타날 때 마다 알림 전송 됩니다."
+                                    android:textColor="@color/txtbold_color"
+                                    android:textSize="10sp" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayout16"
+                        android:layout_marginLeft="15dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="55dp">
+
+                                <Button
+                                    android:id="@+id/boundingBtn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignBottom="@+id/boundingSwitch"
+                                    android:layout_alignEnd="@+id/boundingSwitch"
+                                    android:layout_alignLeft="@+id/boundingSwitch"
+                                    android:layout_alignRight="@+id/boundingSwitch"
+                                    android:layout_alignStart="@+id/boundingSwitch"
+                                    android:layout_alignTop="@+id/boundingSwitch"
+                                    android:background="#00000000" />
+
+                                <com.suke.widget.SwitchButton
+                                    android:id="@+id/boundingSwitch"
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="15dp"
+                                    app:sb_background="@color/txt_color"
+                                    app:sb_button_color="@color/white"
+                                    app:sb_checked_color="@color/boundary_red"
+                                    app:sb_checkline_color="#00000000"
+
+                                    app:sb_uncheck_color="@color/txt_color"
+                                    app:sb_uncheckcircle_color="#00000000" />
+
+                                <TextView
+                                    android:id="@+id/textView32"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerVertical="true"
+                                    android:text="Bounding"
+                                    android:textColor="@color/txtbold_color"
+                                    android:textSize="14sp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp">
+
+                                <TextView
+                                    android:id="@+id/textView33"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="나를 상대방이 Bounding한 경우 알림이 전송 됩니다."
+                                    android:textColor="@color/txtbold_color"
+                                    android:textSize="10sp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@color/divide_color">
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayout15"
+                        android:layout_marginLeft="15dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="55dp">
+
+                                <Button
+                                    android:id="@+id/messageBtn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignBottom="@+id/messageSwitch"
+                                    android:layout_alignEnd="@+id/messageSwitch"
+                                    android:layout_alignLeft="@+id/messageSwitch"
+                                    android:layout_alignRight="@+id/messageSwitch"
+                                    android:layout_alignStart="@+id/messageSwitch"
+                                    android:layout_alignTop="@+id/messageSwitch"
+                                    android:background="#00000000" />
+
+                                <com.suke.widget.SwitchButton
+                                    android:id="@+id/messageSwitch"
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="15dp"
+                                    app:sb_background="@color/txt_color"
+                                    app:sb_button_color="@color/white"
+                                    app:sb_checked_color="@color/boundary_red"
+                                    app:sb_checkline_color="#00000000"
+
+                                    app:sb_uncheck_color="@color/txt_color"
+                                    app:sb_uncheckcircle_color="#00000000" />
+
+                                <TextView
+                                    android:id="@+id/textView30"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerVertical="true"
+                                    android:text="메시지"
+                                    android:textColor="@color/txtbold_color"
+                                    android:textSize="14sp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp">
+
+                                <TextView
+                                    android:id="@+id/textView31"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="새로운 메시지를 받은경우 알림이 전송 됩니다."
+                                    android:textColor="@color/txtbold_color"
+                                    android:textSize="10sp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@color/divide_color">
+
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout15"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="15dp">
+
+                        <Button
+                            android:id="@+id/freshBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/freshSwitch"
+                            android:layout_alignEnd="@+id/freshSwitch"
+                            android:layout_alignLeft="@+id/freshSwitch"
+                            android:layout_alignRight="@+id/freshSwitch"
+                            android:layout_alignStart="@+id/freshSwitch"
+                            android:layout_alignTop="@+id/freshSwitch"
+                            android:background="#00000000" />
+
+                        <com.suke.widget.SwitchButton
+                            android:id="@+id/freshSwitch"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15dp"
+                            app:sb_background="@color/txt_color"
+                            app:sb_button_color="@color/white"
+                            app:sb_checked_color="@color/boundary_red"
+                            app:sb_checkline_color="#00000000"
+
+                            app:sb_uncheck_color="@color/txt_color"
+                            app:sb_uncheckcircle_color="#00000000" />
+
+                        <TextView
+                            android:id="@+id/textView29"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:text="새 매칭"
+                            android:textColor="@color/txtbold_color"
+                            android:textSize="14sp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/divide_color">
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+</layout>

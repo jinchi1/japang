@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">바운더리</string>
+    <string name="agree_txt"><u>이용약관</u></string>
+    <string name="agree_txt2"><u>개인정보 취급방침</u></string>
+
+    <string name="agree_txt3">바운더리의 <u>이용 약관</u>,</string>
+    <string name="agree_txt4"><u>개인정보 보호정책</u>에</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_two_string">우린 하루에도 몇번씩 소셜미디어를 통해 친구들과 소통합니다.\n하지만 나와는 전혀 상관없는, 또는 너무 멀리 떨어진 친구들의 삶을 마주하게 됩니다.</string>
+    <string name="fragment_three_string">Boundary를 통해 나와 좀더 가깝고,\n비슷한 삶을 살며,\n그래서 나를 더 잘 이해해 줄 수 있는,\n그런 사람과 친구가 되어 보는건, 어떨까요?</string>
+
+    <string name="fragment_four_string"><b>밤 10시부터 하루동안</b>\n나와 지나친 친구들을 확인하세요\n<b>하루가 지나면 친구목록이 사라집니다.</b></string>
+    <string name="fragment_five_string_1">그동안 몇번이나 지나쳤는지, [img src=humans_symbol/]</string>
+    <string name="fragment_five_string_2">함께아는 페북친구는 몇명인지, [img src=chain_symbol/]</string>
+    <string name="fragment_six_string">자주지나치는 관심 친구와\nBoundary 친구가 되어 대화를 하고,\n다른 SNS의 친구가 되어보세요.</string>
+
+    <string name="facebook_app_id">1533903046698792</string>
+    <string name="fb_login_protocol_scheme">fb1533903046698792</string>
+</resources>
